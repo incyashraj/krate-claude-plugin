@@ -11,7 +11,8 @@ Install Krate once, from https://krate.tech/download/ (macOS, Windows and Linux)
 Then, in Claude Code:
 
 ```
-/plugin install krate --marketplace incyashraj/krate-claude-plugin
+/plugin marketplace add incyashraj/krate-claude-plugin
+/plugin install krate@krate
 ```
 
 or in a terminal:
