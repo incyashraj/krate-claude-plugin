@@ -6,12 +6,7 @@ in any browser, and can reach only what it declares.
 
 ## Install
 
-Install Krate once:
-
-```sh
-curl -fsSL https://krate.tech/install.sh | sh        # macOS and Linux
-irm https://krate.tech/install.ps1 | iex             # Windows PowerShell
-```
+Install Krate once, from https://krate.tech/download/ (macOS, Windows and Linux).
 
 Then, in Claude Code:
 
@@ -28,12 +23,10 @@ claude plugin install krate@krate
 
 ## What it adds
 
-- **The Krate MCP server** (`krate mcp`): Claude can run a component or a
-  `.krate` inside Krate's sandbox and inspect a bundle without running it.
-- **The make-krate-app skill**: Claude reads Krate's real API
-  (`krate authoring-context`), starts from a working template, checks every
-  change with `krate check-app`, declares only the permissions the app needs,
-  and packages, signs and publishes it as one link.
+The make-krate-app skill: Claude reads Krate's real API
+(`krate authoring-context`), starts from a working template, checks every
+change with `krate check-app`, declares only the permissions the app needs,
+and packages, signs and publishes it as one link.
 
 Ask something like: "Make me a habit tracker as a Krate app and give me a link."
 

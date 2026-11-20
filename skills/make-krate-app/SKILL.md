@@ -13,11 +13,9 @@ rest are each asked for, in plain words, before the app opens.
 
 ## 0. Krate must be installed
 
-Run `krate --version`. If it is missing, tell the person and offer the
-one-line install, which they run themselves:
-
-- macOS and Linux: `curl -fsSL https://krate.tech/install.sh | sh`
-- Windows (PowerShell): `irm https://krate.tech/install.ps1 | iex`
+Run `krate --version`. If it is missing, tell the person to install Krate
+from https://krate.tech/download/ (macOS, Windows and Linux) and come back;
+do not install it for them.
 
 Apps are written in Rust and built for `wasm32-wasip1`; `krate doctor` says
 what is missing and `rustup target add wasm32-wasip1` adds the target.
@@ -81,11 +79,12 @@ their computer, so the app keeps its data through every rebuild.
 browser, on a phone or a computer, with nothing to install. Publishing again
 is the app's next version on the same link.
 
-## The MCP tools
+## Show it working
 
-This plugin also starts `krate mcp`, which gives you tools to run a component
-or a `.krate` inside Krate's sandbox and to inspect a bundle without running
-it. Use them to show the person the app working.
+`krate run <name>.krate` opens the app in Krate's sandbox, asking for each
+permission in plain words; `krate inspect <name>.krate` says what a bundle is
+and asks for without running it. To let Claude Desktop or Cursor build Krate
+apps too, `krate connect` sets that up (it asks before changing anything).
 
 ## Be straight about limits
 
