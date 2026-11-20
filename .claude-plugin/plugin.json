@@ -1,9 +1,9 @@
 {
   "name": "krate",
   "version": "0.5.5",
-  "description": "Build Krate apps with Claude: describe an app, get one small .krate file that runs natively on Mac, Windows and Linux, opens from a link in a browser, and can reach only what it declares.",
+  "description": "Ask Claude for an app and get one link that opens it on any phone, tablet or computer; with the Krate runtime it runs natively on Mac, Windows and Linux. Every app starts with no access and asks before it touches anything.",
   "author": {
-    "name": "Krate Labs",
+    "name": "Krate",
     "url": "https://krate.tech"
   },
   "homepage": "https://krate.tech",
@@ -25,5 +25,6 @@
       "type": "http",
       "url": "https://hub.krate.tech/mcp"
     }
-  }
+  },
+  "termsOfServiceUrl": "https://krate.tech/terms/"
 }
