@@ -19,5 +19,11 @@
   ],
   "documentationUrl": "https://krate.tech/docs/",
   "supportUrl": "https://github.com/incyashraj/krate/issues",
-  "privacyPolicyUrl": "https://krate.tech/privacy/"
+  "privacyPolicyUrl": "https://krate.tech/privacy/",
+  "mcpServers": {
+    "krate": {
+      "type": "http",
+      "url": "https://hub.krate.tech/mcp"
+    }
+  }
 }

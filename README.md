@@ -23,6 +23,8 @@ claude plugin install krate@krate
 
 ## What it adds
 
+- **The Krate connector** (https://hub.krate.tech/mcp): in Claude chat, on the web, the desktop or a phone, ask for an app and get a link that opens it everywhere. Claude writes the code, Krate builds it, signs it to your account and publishes it. You sign in to Krate once.
+- 
 The make-krate-app skill: Claude reads Krate's real API
 (`krate authoring-context`), starts from a working template, checks every
 change with `krate check-app`, declares only the permissions the app needs,

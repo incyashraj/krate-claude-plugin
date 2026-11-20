@@ -11,11 +11,19 @@ and Linux with the Krate runtime, and opens from a link in any browser. It can
 reach nothing it did not declare: files, network hosts, the camera and the
 rest are each asked for, in plain words, before the app opens.
 
-## 0. Krate must be installed
+## 0. Two ways to build: on this computer, or through the Krate connector
 
-Run `krate --version`. If it is missing, tell the person to install Krate
-from https://krate.tech/download/ (macOS, Windows and Linux) and come back;
-do not install it for them.
+- **No `krate` here** (Claude chat on the web, desktop or phone, or a computer
+  without Krate): use the Krate connector's tools. Call `get_krate_guide` and
+  read it before writing any code; write the app's files (`Cargo.toml`,
+  `src/lib.rs`, `manifest.toml`, any `assets/`); call `build_app` with them,
+  then `build_status` until it is done. If the build fails, it returns the
+  check's own words: fix the code and call `build_app` again. When it is done
+  you get a link that opens the app on any phone, computer or browser -- give
+  it to the person. The first build asks them to sign in to Krate once.
+- **`krate` is installed** (`krate --version` answers): follow the steps below
+  on this computer. To install it: https://krate.tech/download/ (macOS,
+  Windows and Linux); do not install it for them.
 
 Apps are written in Rust and built for `wasm32-wasip1`; `krate doctor` says
 what is missing and `rustup target add wasm32-wasip1` adds the target.
