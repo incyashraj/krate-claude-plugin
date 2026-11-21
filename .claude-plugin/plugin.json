@@ -1,7 +1,7 @@
 {
   "name": "krate",
   "version": "0.5.5",
-  "description": "Ask Claude for an app and get one link that opens it on any phone, tablet or computer; with the Krate runtime it runs natively on Mac, Windows and Linux. Every app starts with no access and asks before it touches anything.",
+  "description": "Build one app that runs natively on Windows, macOS and Linux and opens from a link in any browser, with no separate builds per OS. Apps are small, start with no access, and can work offline, print without a dialog and use serial or USB devices.",
   "author": {
     "name": "Krate",
     "url": "https://krate.tech"
@@ -10,12 +10,16 @@
   "repository": "https://github.com/incyashraj/krate-claude-plugin",
   "license": "MIT OR Apache-2.0",
   "keywords": [
-    "apps",
-    "desktop",
-    "webassembly",
+    "cross-platform",
+    "desktop-app",
+    "electron-alternative",
+    "tauri-alternative",
+    "offline",
     "sandbox",
-    "rust",
-    "cross-platform"
+    "webassembly",
+    "internal-tools",
+    "printing",
+    "rust"
   ],
   "documentationUrl": "https://krate.tech/docs/",
   "supportUrl": "https://github.com/incyashraj/krate/issues",
